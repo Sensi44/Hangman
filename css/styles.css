@@ -1,0 +1,67 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    background-color: antiquewhite ;
+}
+
+
+#canvas {
+    border: 7px solid goldenrod;
+    border-radius: 15px;
+    margin: 12px 40px 20px;
+}
+
+.keyboard {
+    border-radius: 7px;
+    padding: 12px;
+    margin: auto;
+    width: 600px;
+    background-color: oldlace;
+}
+
+.buttons_rows {
+    text-align: center;
+}
+
+
+.buttons_rows > button {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    font-size: 114%;
+    cursor: pointer;
+}
+
+.buttons_rows > button:hover {
+    background-color: rosybrown;
+    transform: scale(1.15);
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.buts {
+    display: inline-block;
+    border-radius: 8px;
+    width: auto;
+    padding: 7px 12px;
+    line-height: 35px;
+    font-size: 28px;
+    background-color: goldenrod;
+    margin: 8px;
+    cursor: pointer;
+}
