@@ -29,7 +29,7 @@ function attempts() {
 
     $("#results").text(`Игра отменена`)
 
-    return isFinite(num) ? main.try = +num : attempts();
+    return !isFinite(num) ? attempts() : main.try = +num;
 }
 
 // Обновляем прогресс игры

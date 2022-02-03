@@ -35,7 +35,8 @@ let tick = () => {
     checkAttempts();
     drawSegment(main.try)
     checkWin();
-    return (main.status === 1) ? setTimeout(() => tick(), 100) : null
+    // return (main.status === 1) ? setTimeout(() => tick(), 100) : null   - раньше было так
+    return (main.status === 1) ? requestAnimationFrame(tick) : null // более оптимизировано, вроде как
 }
 tick();
 
